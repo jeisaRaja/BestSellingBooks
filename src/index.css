@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+}
+html{
+    font-size: 62.5%;
+    max-width: 1920px;
+    height: 100%;
+    overflow: hidden;
+}
+
+body{
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* background-size: 100vw 100vh; */
+    background-size: 100% 100%;
+    font-family: 'Montserrat';
+    color: #0000;
+}
+.header{
+    background-image: url("https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-attachment: fixed;
+    box-sizing: border-box;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.cover{
+    max-width: 100vw;
+}
+
+
+.listCon{
+    background-color: rgb(61, 71, 161);
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.list{
+    width: 110rem;
+    display: grid;
+    gap: 4rem;
+    padding: 0 20px;
+}
+
+.titleCon{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+
+    
+}
+
+.flexCon{
+    width: 110rem;
+    padding: 0 20px;
+}
+
+.title{
+    color: rgb(61, 61, 61);
+    font-size: 8rem;
+
+}
+img{
+    max-width: 30rem;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.articleCon{
+    background-color: #ffff;
+    border-radius: 0;
+    margin: auto;
+    padding: 2rem 2rem;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+    transition: all 0.3s;
+}
+
+.articleCon:hover{
+    transform: scale(1.01);
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (min-width:768px) {
+    .list{
+        grid-template-columns: repeat(2, 35rem);
+        
+    }
+    
+}
+
+@media screen and (max-width:767px) {
+    .flexCon{
+        display: flex;
+        justify-content: center;
+        max-width: 70rem;
+    }
+    .title{
+        text-align: center;
+        /* padding-left: 35px; */
+    }
+    .list{
+        max-width: 70rem;
+    }
+    
+}
