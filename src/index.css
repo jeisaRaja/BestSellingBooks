@@ -82,11 +82,10 @@ img{
     margin: auto;
     padding: 2rem 2rem;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
-    transition: all 0.3s;
+    transition: all 0.5s;
 }
 
 .articleCon:hover{
-    transform: scale(1.01);
     box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3);
 }
 
